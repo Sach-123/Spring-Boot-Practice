@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hospitalManagement
+  dataSource:
+    url: jdbc:postgresql://localhost:5432/hospitalDB?useSSL=false
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
