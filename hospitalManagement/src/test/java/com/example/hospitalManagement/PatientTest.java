@@ -27,6 +27,13 @@ public class PatientTest {
 
     @Test
     public void testingPatient(){
-        Patient patient = patientService.getPatient(1L);
+
+//        Patient patient = patientService.getPatient(1L);
+
+        List<Patient> pl = patientRepository.fingByBloodGroup("Di");
+         for(Patient patient: pl){
+             System.out.println(patient);
+         }
+
     }
 }
